@@ -6,8 +6,7 @@ export const getChainId = async () => {
         - Web3 공식문서에서 'getChainId'를 검색하여 기능을 구현하여 주세요.
         - getChainId는 비동기 작업이므로 'await'로 함수를 처리합니다.
   */
-
-  const chainId = FILL_ME_IN;
+  const chainId = await web3.eth.getChainId();
 
   return chainId;
 };

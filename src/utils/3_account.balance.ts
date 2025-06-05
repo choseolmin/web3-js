@@ -7,7 +7,8 @@ export const getBalance = async (address: string) => {
         - getBalance는 비동기 작업이므로 'await'로 함수를 처리합니다.
   */
 
-  const balance = FILL_ME_IN;
+  const balance = await web3.eth.getBalance(address);
+
 
   return balance;
 };
